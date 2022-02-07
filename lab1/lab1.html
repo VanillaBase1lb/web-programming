@@ -1,33 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Great Apes</title>
+    <title>Lab 1</title>
     <style>
-      #top-heading {
-        margin-left: 40%;
+      body {
+        font-family: sans-serif;
+        background: rgba(47, 47, 61, 1);
+        color: white;
       }
-      .sticky-header {
-        position: fixed;
+
+      #top-static {
+        background: black;
         width: 100%;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: sticky;
+        top: 0;
+      }
+
+      #heading {
+        text-align: center;
+      }
+
+      #wiki {
+        color: white;
+        float: right;
+        align-content: center;
+        line-height: 70px;
+      }
+
+      #content {
+        margin: 5% auto auto auto;
+      }
+
+      a {
+        color: yellowgreen;
+        text-decoration: none;
+      }
+      #images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      table, th, td {
+        border: 1px solid yellow;
       }
     </style>
   </head>
+
   <body>
-    <header>
-      <div class="sticky-header">
-        <h1 id="top-heading">The Great Apes</h1>
-        <ul style="list-style: none">
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Bakery">Wiki</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Bakery">Wiki</a>
-          </li>
-        </ul>
+    <header id="top-static">
+      <h1 id="heading">How to Install MS Teams in Windows</h1>
+      <div id="wiki">
+        <a href="https://www.microsoft.com/en-in/microsoft-teams/download-app"
+          >More Info</a
+        >
       </div>
     </header>
+    <div id="content">
+      <h2>Installation Steps:</h2>
+    <br />
+<p>
+      <ol>
+        <li>
+          Open a Web browser and go to:
+          <a href="https://teams.microsoft.com/downloads">Microsoft</a>. You see
+          the Microsoft Teams apps download page showing up.
+        </li>
+        <li>Click on the "Download (64-bit)" button in the Windows sections. You see the file download prompt showing up</li>
+        <li>Save the download file, <b>Teams_windows_x64.exe</b>, to C:\msteams folder. It will take some to finish the download, since the file size is about 76 MB. </li>
+        <li>Double-click on the downloaded file: C:\msteams eams_windows_x64.exe to start installing Teams for Windows. </li>
+        <li>When the installation is completed, you see the Teams loading windows. </li>
+        <li>When the loading is completed, you see Teams logs in automatically with you Windows account. </li>
+      </ol>
+</p>
+    </div>
+    <br />
+    <h2>Pictures to Help with Installation:</h2>
+    <div id="images">
+    <img src="info.jpg" alt="">
+    <br>
+    <a href="info2.jpg"><img src="info2.jpg" alt=""></a>
+</div>
+<br>
+<h2>Officially Supported Windows Versions:</h2>
+<br>
+<table>
+  <tr><th>Windows Version</th><th>Supported</th></tr>
+  <tr><td>Windows 11</td><td>true</td></tr>
+  <tr><td>Windows 10</td><td>true</td></tr>
+  <tr><td>Windows 8</td><td>false</td></tr>
+  <tr><td>Windows 7</td><td>false</td></tr>
+  <tr><td>Windows XP</td><td>false</td></tr>
+</table>
+<br>
+Yuvraj Mishra 19XJ1A0576
   </body>
 </html>
