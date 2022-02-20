@@ -1,0 +1,24 @@
+.floating-card {
+  margin: 3em;
+  float: left;
+}
+
+body::before {
+  background: url(background.jpg) no-repeat;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover;
+  filter: blur(1px);
+}
+
+* {
+  transition-timing-function: ease;
+  transition-duration: 2s;
+}
+
+.floating-card:hover {
+  margin: 5em;
+}

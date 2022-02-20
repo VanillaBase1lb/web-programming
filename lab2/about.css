@@ -1,0 +1,17 @@
+.mydiv {
+    width: 30%;
+    margin: 5em;
+    font-weight: bold;
+    padding: 2em;
+    background: red;
+    transition-timing-function: ease;
+    transition-duration: 3s;
+}
+
+.mydiv:hover {
+    width: 80%;
+}
+
+body {
+    background: darkgray;
+}
