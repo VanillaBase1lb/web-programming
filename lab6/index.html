@@ -1,0 +1,34 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <p>Correct credentials: <br>
+        email: yuvraj@email.com <br>
+        password: password123 <br>
+    </p>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div class="mail">
+        <h2>Enter E-mail and password to login</h2>
+        <form name="form" action="todo.html" onsubmit="return checkLoginCredentials()" method="post">
+            <ul>
+                <li>E-mail:</li>
+                <li><input type="text" name="text1" id="email" /></li>
+                <li><br></li>
+                <li>Password:</li>
+                <li><input type="password" name="text2" id="password" /></li>
+                <li><br></li>
+                <li class="submit">
+                    <input type="submit" name="submit" value="Submit" />
+                </li>
+                <li><br></li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>

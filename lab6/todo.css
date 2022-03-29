@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Great+Vibes&family=Quicksand&family=Raleway:wght@300&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: #d353ec;
+}
+
+.todo-container {
+    width: 40%;
+}
+
+input {
+    font-family: 'Calibri', sans-serif;
+}
+
+.input {
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input .form-control {
+    background: transparent;
+    border: 2px solid white;
+    height: 50px;
+    border-radius: 5px;
+    width: 90%;
+    padding: 0px 20px;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.add .material-icons {
+    background: #462fc7;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #161117;
+    border-radius: 50%;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.todo-list li {
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: rgb(1, 8, 14);
+    background: #38d145;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+    box-shadow: 0px 5px 10px rgb(0,0,0,0.55);
+}
+
+.left-cont input {
+    display: none;
+    cursor: pointer;
+}
+
+.left-cont label {
+    position: relative;
+    cursor: pointer;
+}
+
+.left-cont label:before {
+    content: '';
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: #412d46;
+    border-radius: 3px;
+}
+
+.left-cont input:checked + label:before {
+    background: #ffc800;
+}
+
+.left-cont input:checked + label:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 12px;
+    border: solid #221525;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+}
+
+.remove {
+    display: none;
+    color: #ff0047;
+    cursor: pointer;
+    line-height: 1;
+    transform: translateX(48);
+    transition: .5s;
+}
+
+.remove:active {
+    transform: translateX(0);
+    transition: .5s;
+}

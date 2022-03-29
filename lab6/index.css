@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  background-image: url("index_background.jpg");
+  background-size: cover;
+}
+
+li {
+  list-style-type: none;
+}
+
+.mail {
+  margin: 10% 10% 0% 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  background: #c29868;
+}
+
+input {
+  background-color: khaki;
+}
+
+input:focus,
+textarea:focus {
+  background-color: lightyellow;
+}
+
+p {
+  color: aqua;
+}
